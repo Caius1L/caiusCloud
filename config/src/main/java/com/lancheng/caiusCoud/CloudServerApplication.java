@@ -10,7 +10,6 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableDiscoveryClient
 @EnableConfigServer
 @SpringBootApplication
-@EnableCircuitBreaker
 public class CloudServerApplication {
 
 	public static void main(String[] args) {

@@ -7,7 +7,7 @@
         <module>config</module>
         <module>cloud-client</module>
         <module>eureka</module>
-        <module>Zuul</module>
+        <module>zuul-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
