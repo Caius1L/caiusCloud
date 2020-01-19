@@ -1,0 +1,30 @@
+#eureka将要注册的端口
+server:
+  port: 10010
+eureka:
+  client:
+    #是否注册自身 默认true 注册 false 不注册
+    register-with-eureka: false
+    #不要在本地缓存注册表信息
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka/
+  instance:
+    #主机域名
+    hostname: localhost
+#  instance:
+#    #主机域名
+#    hostname: localhost
+  server:
+    #是否开启自我保护 默认true 开启  false 不开启
+    enable-self-preservation: false
+    #服务失效扫描时间 单位毫秒
+    eviction-interval-timer-in-ms: 5000
+
+spring:
+  application:
+    name: eureka-server
+
+
+##每个服务的注册需要30s后才能显示在eureka服务中，因为eureka服务需要从服务接收3次连续心跳包ping，
+##每次心跳包的ping间隔是10s，然后才能使用这个服务。

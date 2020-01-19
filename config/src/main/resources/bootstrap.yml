@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: dev #设置使用本地配置(默认是git,可以设置：subversion(SVN)，native(本地))
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Caius1L/repository
+          search-paths: firstConfig
+          username:
+          password:
+      label: master
+
+server:
+  port: 8080
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    health-check-url-path: /actuator/health
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_CLUSTER_URL:http://127.0.0.1:10010/eureka/}
+    registry-fetch-interval-seconds: 5
+    instance-info-replication-interval-seconds: 10
