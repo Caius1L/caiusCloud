@@ -19,6 +19,7 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private UserDetailsService userDetailsService;
 
+
     //这定义了哪些客户端将注册到服务
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
