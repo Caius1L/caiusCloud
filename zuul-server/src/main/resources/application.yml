@@ -1,0 +1,10 @@
+zuul:
+  retryable: true
+  host:
+    connect-timeout-millis: 3000
+    socket-timeout-milles: 3000
+    routes:
+      config-server:
+        path: /test/**
+        serviceId: caius-test
+        sensitiveHeaders: "*"

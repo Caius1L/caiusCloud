@@ -1,6 +1,6 @@
 spring:
   application:
-    name: configserver
+    name: config-server
   profiles:
     active: dev #设置使用本地配置(默认是git,可以设置：subversion(SVN)，native(本地))
   cloud:
