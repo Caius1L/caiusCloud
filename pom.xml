@@ -9,6 +9,7 @@
         <module>eureka-server</module>
         <module>zuul-server</module>
         <module>auth-server</module>
+        <module>teach</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
