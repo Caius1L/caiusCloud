@@ -11,6 +11,7 @@ public class MathUtil {
         }
         return n;
     }
+
     //利用麦克劳林公式
     static int calculate(int angle) {
         int k = 0, i = 0, j = 0, cons = 1;
