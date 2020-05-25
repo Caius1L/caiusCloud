@@ -6,12 +6,10 @@ public class CordicBetter {
 
     static double[] ctab = new double[iterations];
 
-    public static void Table_Generate() {
+    private static void tableGenerate() {
         double theta = 1.0;
         for (int i = 0; i < iterations; i++) {
             ctab[i] = Math.atan(theta);
-//            System.out.println(ctab[i]*180/Math.PI);
-//            System.out.printf("Cordic table %d is arctan %.17f = %.17f\n", i, theta, ctab[i]);
             theta = theta / 2.0;
         }
     }
@@ -37,10 +35,9 @@ public class CordicBetter {
     }
 
     public static void main(String[] args) {
-        Table_Generate();
+        tableGenerate();
         double[] tests = { Math.PI / 2.0, Math.PI / 3.0, Math.PI / 4.0,Math.PI / 6.0};
-        for (int i = 0; i < tests.length; i++) {
-            double theta = tests[i];
+        for (double theta : tests) {
             double answer = cordic(theta) / 1e9;
             System.out.printf("Cordic %f is %f \n", theta, answer);
         }
