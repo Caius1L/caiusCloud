@@ -134,15 +134,16 @@ public class SA {
     }
 
     public static void main(String[] args) throws IOException {
-        TspProblem problem = TspReader.readTSP("/Users/lancheng/IdeaProjects/caiusCloud/teach/src/main/resources/eil51.txt", 51);
-        SA sa = new SA(problem);
-        int[] rout = sa.BFS();
-        double T0 = 1e6;
-        double d = 0.99;
-        double Tk = 1e-6;
-        int L = 20 * rout.length;//内循环次数
-        int[] rout2 = sa.Sa_TSP(rout, T0, d, Tk, L);
-        sa.print(rout2);
+//        TspProblem problem = TspReader.readTSP("/Users/lancheng/IdeaProjects/caiusCloud/teach/src/main/resources/eil51.txt", 51);
+//        SA sa = new SA(problem);
+//        int[] rout = sa.BFS();
+//        double T0 = 1e6;
+//        double d = 0.99;
+//        double Tk = 1e-6;
+//        int L = 20 * rout.length;//内循环次数
+//        int[] rout2 = sa.Sa_TSP(rout, T0, d, Tk, L);
+//        sa.print(rout2);
+        System.out.println(Math.exp(2));
     }
 
 }
