@@ -1,6 +1,7 @@
 package com.lancheng.caiusCloud.lru;
 
 import java.util.*;
+import java.util.regex.Pattern;
 
 public class MyLru {
 
@@ -92,15 +93,7 @@ public class MyLru {
     }
 
     public static void main(String[] args) {
-        MyLru myLru = new MyLru();
-        myLru.put(0, 2);
-        myLru.put(1, 3);
-        myLru.put(2, 4);
-        myLru.get(1);
-        myLru.put(3, 2);
-        System.out.println(myLru.getList());
-        myLru.cleanCache(3);
-        System.out.println(myLru.getList());
-        System.out.println(myLru.getMap());
+        String regex = "^(?![A-Z]+$)(?![a-z]+$)(?!\\d+$)(?![\\W_]+$)\\S{8,20}$";
+        System.out.println(Pattern.matches(regex,"$gxx123456"));
     }
 }
