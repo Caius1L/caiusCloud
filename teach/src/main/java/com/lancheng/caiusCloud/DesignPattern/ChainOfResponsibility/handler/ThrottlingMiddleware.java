@@ -40,9 +40,7 @@ public class ThrottlingMiddleware extends Middleware {
             request = 0;
             currentTime = System.currentTimeMillis();
         }
-
         request++;
-
         if (request > requestPerMinute) {
             System.out.println("Request limit exceeded!");
             Thread.currentThread().stop();

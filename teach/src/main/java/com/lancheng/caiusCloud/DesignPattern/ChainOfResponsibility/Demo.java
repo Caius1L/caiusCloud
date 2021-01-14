@@ -47,7 +47,6 @@ public class Demo {
 
     public static void main(String[] args) throws IOException {
         init();
-
         boolean success;
         do {
             System.out.print("Enter email: ");
