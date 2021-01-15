@@ -1,4 +1,4 @@
-package com.lancheng.caiusCloud.DesignPattern.singleton;
+package com.lancheng.caiusCloud.DesignPattern.Singleton;
 
 /**
  * 最简单的单例模式

@@ -1,4 +1,4 @@
-package com.lancheng.caiusCloud.DesignPattern.singleton;
+package com.lancheng.caiusCloud.DesignPattern.Singleton;
 
 public class SynchronizedSingleton {
 

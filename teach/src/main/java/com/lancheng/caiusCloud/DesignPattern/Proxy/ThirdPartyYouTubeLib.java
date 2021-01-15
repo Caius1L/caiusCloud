@@ -20,8 +20,18 @@ import java.util.HashMap;
  */
 public interface ThirdPartyYouTubeLib {
 
+    /**
+     *
+     * 获取所有的视频流
+     * @return 视频流文件集合
+     */
     HashMap<String, Video> popularVideos();
 
+    /**
+     * 根据视频流编号获取视频流文件
+     * @param videoId 视频编号
+     * @return 视频流文件
+     */
     Video getVideo(String videoId);
 
 }

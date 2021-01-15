@@ -1,4 +1,4 @@
-package com.lancheng.caiusCloud.DesignPattern.singleton;
+package com.lancheng.caiusCloud.DesignPattern.Singleton;
 
 /**
  * 在单例模式的最佳实践中，类只会加载一次，通过在申明时直接实例化静态成员的方式
