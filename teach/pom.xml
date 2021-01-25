@@ -18,8 +18,8 @@
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
-            <artifactId>netty-transport</artifactId>
-            <version>4.1.49.Final</version>
+            <artifactId>netty-all</artifactId> <!-- Use 'netty-all' for 4.0 or above -->
+            <version>4.1.33.Final</version>
         </dependency>
     </dependencies>
 
